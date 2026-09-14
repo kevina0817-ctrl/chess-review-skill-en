@@ -1,0 +1,41 @@
+{
+  "archive_date": "2000-01-02",
+  "timezone": "Teaching example date",
+  "user_color": "white",
+  "intro": "This fictional teaching game demonstrates the skill's board, commentary, and move practice.",
+  "overview": [
+    "White's queen captures the f7-pawn with check, protected by the bishop on c4. Black's king cannot capture the queen, and Black has no other way to escape check."
+  ],
+  "strengths": [
+    "The final move delivers a verified mate in one."
+  ],
+  "training": [
+    {
+      "title": "Check every way to escape check",
+      "text": "Determine whether the opponent can capture the attacker, block the check, or move the king."
+    }
+  ],
+  "notes_prompt": "Why did I conclude that this move was checkmate?",
+  "review_guide": "Select “Try a move” to find the final move, then use “Full replay” to check the complete game.",
+  "ending": "White wins by checkmate. This is a fictional teaching example.",
+  "provenance": "This example uses manually written commentary. The demonstration line and checkmate are validated by python-chess. Stockfish was not run to build this demonstration.",
+  "date_note": "The date and player names are for teaching purposes only and do not come from a personal game.",
+  "lessons": [
+    {
+      "ply": 6,
+      "tag": "Mate-in-one example",
+      "title": "Find the final checkmate",
+      "summary": "White's queen captures the f7-pawn with check, protected by the bishop on c4. Black's king cannot capture the queen, and Black has no other way to escape check.",
+      "why": "The played move and the demonstration are the same verified checkmate.",
+      "fix": "Qxf7#. White's queen captures the f7-pawn with check, protected by the bishop on c4. Black's king cannot capture the queen, and Black has no other way to escape check.",
+      "habit": "Before each move, check whether you have a mating opportunity.",
+      "hint": "Look for checks by the queen and verify every possible response.",
+      "actual_plies": 1,
+      "better": [
+        "Qxf7#"
+      ],
+      "assert_mate": true,
+      "positive": true
+    }
+  ]
+}

@@ -6,27 +6,19 @@ Designed for AI assistants that support the Agent Skills (`SKILL.md`) format, in
 
 ## Quick installation
 
-Open a terminal, paste this command, and press Enter to download the complete repository—including the bundled Stockfish engine—to your computer:
+Open a terminal and run this command to download the skill, including Stockfish:
 
 ```bash
 git clone https://github.com/kevina0817-ctrl/chess-review-skill-en.git
 ```
 
-This creates a `chess-review-skill-en` folder in your current directory. Alternatively, choose **Code → Download ZIP** on this GitHub page and extract the ZIP.
+Or choose **Code → Download ZIP** on this page and extract it.
 
-Copy `skills/chess-review-open-en` into your AI assistant's skills directory. The location varies by assistant; consult its Skills instructions. You can also use the skill without installing it: keep the repository in your project and tell your assistant:
+Copy the `skills/chess-review-open-en` folder into your AI assistant's skills directory. Or keep the downloaded repository in your project and tell your assistant:
 
 > Review my game using `chess-review-skill-en/skills/chess-review-open-en/SKILL.md`.
 
-You need Python 3.10 or later. Stockfish is already bundled. The assistant can install the only Python dependency, `chess` from the python-chess project, in an isolated environment on first use. To prepare it yourself, run these commands after cloning:
-
-```sh
-cd chess-review-skill-en
-python3 -m venv .venv
-.venv/bin/python -m pip install -r skills/chess-review-open-en/requirements.txt
-```
-
-On Windows, use `.venv\Scripts\python.exe` in place of `.venv/bin/python`.
+You need Python 3.10 or later. Stockfish is already included, and your assistant can install the required Python package on first use. For optional manual setup, see the [setup guide](skills/chess-review-open-en/references/workflow.md#dependencies).
 
 ## How to use it
 

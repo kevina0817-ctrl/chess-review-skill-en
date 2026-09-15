@@ -114,6 +114,6 @@ See the [workflow guide](skills/chess-review-open-en/references/workflow.md) for
 
 The engine archives are included, so no separate Stockfish download is needed. Install the Python dependency before generating reviews.
 
-This project's own scripts, webpage templates, documentation, and examples use [PolyForm Noncommercial 1.0.0](LICENSE). They may be used, modified, and shared free of charge for **noncommercial purposes**, including personal study, hobbies, teaching, schools, and nonprofit organizations. Commercial use requires separate written permission from Mission Nine Lab Inc.
+This project's own scripts, webpage templates, documentation, and examples use [PolyForm Noncommercial 1.0.0](LICENSE). They may be used, modified, and shared free of charge for **noncommercial purposes**, including personal study, hobbies, teaching, schools, and nonprofit organizations. Commercial use requires separate written permission from Mission Nine Lab Inc. Contact: [info@mission9lab.com](mailto:info@mission9lab.com).
 
 Bundled Stockfish, separately installed python-chess, and the chess piece artwork are third-party works with their own licenses. The project's noncommercial restriction does not apply to those components. See the [third-party notices](skills/chess-review-open-en/NOTICE.md).

@@ -1,0 +1,26 @@
+{
+  "name": "chess-review-en",
+  "version": "3.0.0",
+  "description": "Automatic Chess.com import, interactive game reviews, scores, threats, opening study, common leaks and progress.",
+  "author": {
+    "name": "Mission Nine Lab Inc."
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Chess Review Open 3.0 \u00b7 English",
+    "shortDescription": "Learn from both sides, recurring mistakes and real progress.",
+    "longDescription": "Review by Chess.com username or PGN. Learn from both sides with scores, an evaluation chart and bar, engine continuations and opening links. After 10 completed reviews, opt into incremental common-leaks and progress analysis. Outputs local HTML by default.",
+    "developerName": "Mission Nine Lab Inc.",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "My Chess.com username is YOUR_USERNAME. Review my latest game.",
+      "I have at least 10 completed reviews. Analyze my common leaks."
+    ]
+  },
+  "repository": "https://github.com/kevina0817-ctrl/chess-review-skill-en",
+  "license": "PolyForm-Noncommercial-1.0.0"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chess Review"
+  short_description: "Interactive English chess reviews with local HTML output."
+  default_prompt: "Use $chess-review-open-en to review my latest completed game."

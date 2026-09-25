@@ -1,0 +1,125 @@
+{
+  "archive_date": "2026-09-24",
+  "timezone": "Historical teaching demo",
+  "user_color": "white",
+  "intro": "The 1858 Opera Game, from White’s perspective. Explore both sides, the evaluation chart, threats and opening plans.",
+  "overview": [
+    "A public historical teaching example, not a private user record. White brings pieces into the attack and sacrifices the queen to clear the d-file for mate.",
+    "Scores summarize the analyzed moves in this game. Read them alongside the decisive moments; they are not a playing-strength rating."
+  ],
+  "strengths": [
+    "Use checks to advance the attack, then calculate the legal defensive replies.",
+    "Black’s Qe7 is also instructive: look for defensive resources on f7 and counterplay even in a worse position."
+  ],
+  "training": [
+    {
+      "title": "Check forcing moves first",
+      "text": "Look for checks and captures, then calculate the strongest reply."
+    },
+    {
+      "title": "Look beyond the material",
+      "text": "When an opponent sacrifices, inspect the lines opening toward your king."
+    }
+  ],
+  "ending": "17. Rd8# checkmates Black.",
+  "provenance": "Local Stockfish 19 analysis; suggested lines validated with python-chess. Public historical teaching example.",
+  "date_note": "Played in 1858; 2026-09-24 is the demo archive date, not the historical game date.",
+  "review_guide": "Click the chart to revisit actual play. Open an engine continuation to explore one possible line.",
+  "opening_notes": "In the Philidor Defense, d6 supports e5. White challenges the center with d4. In this game, watch whether the minor pieces develop and the rooks can reach open files quickly. The aim is to understand the plan, not treat an opening name as a move prescription.",
+  "lessons": [
+    {
+      "ply": 18,
+      "actor": "user",
+      "tag": "Create a threat",
+      "title": "10. Nxb5: see the lines behind the sacrifice",
+      "summary": "After Nxb5, Black recaptures in the game; Bxb5+ opens the attack with check.",
+      "why": "After Nxb5, Black recaptures in the game; Bxb5+ opens the attack with check.",
+      "fix": "Do not stop calculating when the knight is captured. Follow the bishop and rook into the attack.",
+      "habit": "Check both sides’ checks and captures, then inspect king safety and open lines.",
+      "hint": "Look at the lines controlled by the queen, rooks and bishops.",
+      "better": [
+        "Nxb5",
+        "cxb5",
+        "Bxb5+",
+        "Nbd7"
+      ],
+      "positive": true,
+      "actual_plies": 4
+    },
+    {
+      "ply": 13,
+      "actor": "opponent",
+      "tag": "Opponent’s defensive resource",
+      "title": "7… Qe7: reinforce f7 first",
+      "summary": "White’s queen and bishop aim at f7. Qe7 protects it and prepares Qb4+ in some variations.",
+      "why": "White’s queen and bishop aim at f7. Qe7 protects it and prepares Qb4+ in some variations.",
+      "fix": "Even when worse, look for resources: after the illustrative Qxb7, Qb4+ seeks a queen trade with check.",
+      "habit": "Check both sides’ checks and captures, then inspect king safety and open lines.",
+      "hint": "Look at the lines controlled by the queen, rooks and bishops.",
+      "better": [
+        "Qe7",
+        "Qxb7",
+        "Qb4+",
+        "Qxb4"
+      ],
+      "positive": true,
+      "actual_plies": 4
+    },
+    {
+      "ply": 17,
+      "actor": "opponent",
+      "tag": "Opponent’s mistake",
+      "title": "9… b5: chasing the bishop misses Nxb5",
+      "summary": "b5 attacks the bishop but allows the Nxb5 tactic. The actual recapture is followed by Bxb5+ and a stronger attack.",
+      "why": "b5 attacks the bishop but allows the Nxb5 tactic. The actual recapture is followed by Bxb5+ and a stronger attack.",
+      "fix": "The engine suggests Kd8. Black is already worse; this line aims to limit further damage, not restore equality.",
+      "habit": "Check both sides’ checks and captures, then inspect king safety and open lines.",
+      "hint": "Look at the lines controlled by the queen, rooks and bishops.",
+      "better": [
+        "Kd8",
+        "O-O-O+",
+        "Kc7",
+        "Bxf7"
+      ],
+      "positive": false,
+      "actual_plies": 4
+    },
+    {
+      "ply": 22,
+      "actor": "user",
+      "tag": "Use the development lead",
+      "title": "12. O-O-O: bring the rook to an open file",
+      "summary": "Queenside castling places the a1 rook on d1, quickly joining the attack on the king.",
+      "why": "Queenside castling places the a1 rook on d1, quickly joining the attack on the king.",
+      "fix": "The actual Rd8 and Rxd7 continuation shows the rooks combining on the d-file.",
+      "habit": "Check both sides’ checks and captures, then inspect king safety and open lines.",
+      "hint": "Look at the lines controlled by the queen, rooks and bishops.",
+      "better": [
+        "O-O-O",
+        "Rd8",
+        "Rxd7",
+        "Rxd7"
+      ],
+      "positive": true,
+      "actual_plies": 4
+    },
+    {
+      "ply": 30,
+      "actor": "user",
+      "tag": "Mating combination",
+      "title": "16. Qb8+: sacrifice the queen to clear the way",
+      "summary": "Qb8+ checks the king. After the knight captures the queen, Rd8# follows.",
+      "why": "Qb8+ checks the king. After the knight captures the queen, Rd8# follows.",
+      "fix": "Calculate the reply to check and verify Rd8#. The queen sacrifice clears the decisive route for the rook.",
+      "habit": "Check both sides’ checks and captures, then inspect king safety and open lines.",
+      "hint": "Look at the lines controlled by the queen, rooks and bishops.",
+      "better": [
+        "Qb8+",
+        "Nxb8",
+        "Rd8#"
+      ],
+      "positive": true,
+      "actual_plies": 3
+    }
+  ]
+}

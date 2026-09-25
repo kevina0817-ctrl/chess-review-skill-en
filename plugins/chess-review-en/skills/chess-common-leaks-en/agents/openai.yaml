@@ -1,0 +1,4 @@
+interface:
+  display_name: "Common Leaks"
+  short_description: "Find recurring mistakes and track evidence-based progress."
+  default_prompt: "Use $chess-common-leaks-en to analyze my completed game reviews."

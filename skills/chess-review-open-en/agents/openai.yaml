@@ -1,4 +1,0 @@
-interface:
-  display_name: "Interactive Chess Review (English)"
-  short_description: "English PGN analysis, move practice, and offline review pages"
-  default_prompt: "Use $chess-review-open-en to analyze my PGN from my side, create an English interactive review, and update my review library."

@@ -41,9 +41,20 @@ If the requested game is already reviewed, the assistant returns the existing re
 
 ## Features
 
+See the review at a glance: game data, an interactive board and explanations of key decisions.
+
+![Game review overview: scores, evaluation chart, chessboard and key-move explanations](docs/screenshots/review-overview.png)
+
+*Public historical teaching example: the 1858 Opera Game.*
+
 ### 1. Game review
 
-Select a section to expand its explanation and screenshots; select it again to collapse.
+Understand your game, learn from both sides and try better moves yourself. Explore scores, possible threats and opening plans alongside the board.
+
+<details>
+<summary><strong>Explore game review — details and screenshots</strong></summary>
+
+Select a topic below to see how it works.
 
 <details>
 <summary><strong>Both sides, scores and evaluation chart</strong></summary>
@@ -57,11 +68,11 @@ Select a section to expand its explanation and screenshots; select it again to c
 </details>
 
 <details>
-<summary><strong>Threats and engine continuations</strong></summary>
+<summary><strong>See what could happen next</strong></summary>
 
-**Understand the continuation.** Engine examples mark checks, captures and verified checkmate. Suggested lines are always separate from the actual game.
+**See the next few moves.** Replay a possible sequence suggested by Stockfish, the chess analysis engine, to spot checks, captures and mating ideas for either side. This helps you understand a threat and look for a response. It is an example of what could happen, not a prediction of what your opponent must play; it stays separate from the actual game.
 
-![Advantage bar and an engine continuation](docs/screenshots/v3-threats.png)
+![A possible sequence showing a check, a capture and checkmate](docs/screenshots/v3-threats.png)
 
 </details>
 
@@ -125,7 +136,14 @@ This example identifies **C41 · Philidor Defense** and explains the idea of sup
 
 *Screenshots use fictional teaching games and the public historical Opera Game, not private user records.*
 
+</details>
+
 ### 2. Common-leaks analysis
+
+Find mistakes that repeat across your games and compare what you played with a better approach. Available after at least **10 distinct completed reviews**, with your opt-in; new reviews then add examples to the archive.
+
+<details>
+<summary><strong>Explore common leaks — details and screenshots</strong></summary>
 
 **Find mistakes that keep returning.** Group similar decisions across games and revisit each position. One occurrence is a “New finding”; at least two different games are needed for a repeated pattern.
 
@@ -137,13 +155,22 @@ This example identifies **C41 · Philidor Defense** and explains the idea of sup
 
 Opt in after at least **10 distinct completed interactive reviews**. Downloaded PGNs alone do not count. Later reviews add examples to existing groups or introduce new findings.
 
+</details>
+
 ### 3. Progress analysis
+
+See what you are doing better through real good moves and earlier/later comparisons. Progress has its own tab, so improvements stay visible alongside the habits you are still working on.
+
+<details>
+<summary><strong>Explore progress — details and screenshots</strong></summary>
 
 **See what you are doing better.** A separate Progress tab records real good moves and, when comparable evidence exists, earlier/later examples. One success does not mean a recurring mistake is permanently fixed.
 
 ![Earlier and later decisions in the Progress tab](docs/screenshots/common-leaks-progress.png)
 
 *Common-leaks and progress screenshots use fictional teaching games. Your archive uses your own verified games.*
+
+</details>
 
 ## How does it compare?
 

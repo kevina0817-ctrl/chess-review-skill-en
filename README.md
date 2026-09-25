@@ -20,7 +20,7 @@ Works with Codex, Claude Code, Kimi and other assistants that support the Agent 
 
 The plugin contains two skills: **`chess-review-open-en`** for individual games and **`chess-common-leaks-en`** for recurring mistakes and progress.
 
-## One-minute installation
+## Quick Installation
 
 Open a conversation in **Codex or your coding agent’s desktop app** and paste:
 
@@ -28,20 +28,25 @@ Open a conversation in **Codex or your coding agent’s desktop app** and paste:
 Install the Chess Review English plugin and both skills from this repository, and set up the required dependencies: https://github.com/kevina0817-ctrl/chess-review-skill-en
 ```
 
-Once installed, tell your assistant your Chess.com username and ask for a review. Updating from the earlier single-skill edition? Ask the agent to update to this plugin and install both skills; keep your existing review archive.
+Once installed, tell your assistant your Chess.com username and ask for a review. If you already have an earlier version, ask the agent to update the skill.
 
 ## How to use it
 
 1. **Share your username.** “My Chess.com username is YOUR_USERNAME. Review my latest game.” The assistant remembers it locally and checks your color separately for each game.
-2. **Just ask next time.** “Review my latest game” or “Review my last three games.” For other platforms, paste PGN and say which side you played.
+2. **Just ask.** Ask the agent to review a game—for example, “Review my last game.” By default, it reviews your latest completed game. You can also ask for several recent games or specify a particular game by date, opponent or game link. For other platforms, paste PGN and say which side you played.
 3. **Open your review.** Each game is saved as `chess-reviews/DATE_Opponent.html`, with an `index.html` containing your archive.
 4. **Find recurring mistakes.** After at least 10 completed reviews, ask “Analyze my common leaks.” Once enabled, new reviews update the archive automatically.
 
-The default is one latest game. If it is already reviewed, the assistant returns the existing record. Chess.com’s public archives can lag; missing new games are reported honestly.
+If the requested game is already reviewed, the assistant returns the existing record. Chess.com’s public archives can lag; missing new games are reported honestly.
 
 ## Features
 
 ### 1. Game review
+
+Select a section to expand its explanation and screenshots; select it again to collapse.
+
+<details>
+<summary><strong>Both sides, scores and evaluation chart</strong></summary>
 
 **Learn from both sides, with data linked to the board.** Explore your own and your opponent’s key moves, strengths and mistakes. Click the chart to revisit actual play; the advantage bar follows the current analyzed position.
 
@@ -49,11 +54,19 @@ The default is one latest game. If it is already reviewed, the assistant returns
 
 ![Both sides’ scores, phase breakdown and clickable evaluation chart](docs/screenshots/v3-insights.png)
 
+</details>
+
+<details>
+<summary><strong>Threats and engine continuations</strong></summary>
+
 **Understand the continuation.** Engine examples mark checks, captures and verified checkmate. Suggested lines are always separate from the actual game.
 
 ![Advantage bar and an engine continuation](docs/screenshots/v3-threats.png)
 
-*The 3.0 screenshots use a public historical teaching game, not a private user record.*
+</details>
+
+<details>
+<summary><strong>Opening recognition and study</strong></summary>
 
 **Opening recognition and study: learn from a position you actually played.** Expand “Learn this opening” to see the matched name, ECO code and opening moves.
 
@@ -61,27 +74,56 @@ The default is one latest game. If it is already reviewed, the assistant returns
 
 This example identifies **C41 · Philidor Defense** and explains the idea of supporting e5 with d6 while White challenges the center with d4. Jump back to the opening position on the board, then follow the study link to explore its plans and variations. Opening recognition works offline; external learning resources need an internet connection.
 
+</details>
+
+<details>
+<summary><strong>Key moments: actual vs. suggested moves</strong></summary>
+
 **Focus on a few useful moments.** Instead of a wall of moves, stop where a decision mattered: a hanging piece, a missed threat, a good defense or a mating opportunity.
 
 **Actual move vs. suggested move.** Compare both paths from the same position, with arrows and short explanations of why the move matters.
 
 ![A key moment and a suggested continuation](docs/screenshots/lesson-better.png)
 
+</details>
+
+<details>
+<summary><strong>Try it yourself</strong></summary>
+
 **Try it yourself.** Make a move from the real position before revealing the answer. The page checks legality, recognizes verified alternatives and offers hints.
 
 ![Trying a move and receiving feedback](docs/screenshots/practice.png)
+
+</details>
+
+<details>
+<summary><strong>Full-game replay</strong></summary>
 
 **Replay the whole game.** Step forward or backward, autoplay, flip the board and download PGN.
 
 ![Full-game replay](docs/screenshots/replay.png)
 
+</details>
+
+<details>
+<summary><strong>Review archive</strong></summary>
+
 **Keep a review archive.** Search opponents, filter by color and open every interactive review from one page.
 
 ![Review archive](docs/screenshots/library.png)
 
+</details>
+
+<details>
+<summary><strong>Mobile and offline access</strong></summary>
+
 **Use it on your phone.** Each review is a standalone HTML file you can open offline.
 
 <img src="docs/screenshots/mobile.png" alt="Mobile review" width="360">
+
+</details>
+
+*Screenshots use fictional teaching games and the public historical Opera Game, not private user records.*
 
 ### 2. Common-leaks analysis
 

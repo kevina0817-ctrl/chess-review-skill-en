@@ -1,6 +1,6 @@
 # Chess Review Open 3.0 · Interactive Chess Review
 
-[Chinese edition](https://github.com/kevina0817-ctrl/chess-review-skill)
+**[Chinese version →](https://github.com/kevina0817-ctrl/chess-review-skill)**
 
 ## Purpose
 

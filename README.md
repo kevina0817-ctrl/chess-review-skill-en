@@ -44,7 +44,7 @@ If the requested game is already reviewed, the assistant returns the existing re
 
 See the review at a glance: game data, an interactive board and explanations of key decisions.
 
-![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/review-overview.png)
+![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/v3.1-review-overview.png)
 
 *Public historical teaching example: the 1858 Opera Game.*
 
@@ -66,7 +66,7 @@ Select a topic below to see how it works.
 
 There are no accuracy-style totals, phase scores or per-move ratings. The evaluation chart and advantage bar still show position changes for White and Black, not actual winning probability. Expand the on-page explanation for the classification and chart definitions.
 
-![Both sides’ total moves, blunders, mistakes, good moves and clickable evaluation chart](docs/screenshots/v3-insights.png)
+![Both sides’ total moves, blunders, mistakes, good moves and clickable evaluation chart](docs/screenshots/v3.1-insights.png)
 
 </details>
 
@@ -75,7 +75,7 @@ There are no accuracy-style totals, phase scores or per-move ratings. The evalua
 
 **See the next few moves.** Replay a possible sequence suggested by Stockfish, the chess analysis engine, to spot checks, captures and mating ideas for either side. This helps you understand a threat and look for a response. It is an example of what could happen, not a prediction of what your opponent must play; it stays separate from the actual game.
 
-![A possible sequence showing a check, a capture and checkmate](docs/screenshots/v3-threats.png)
+![A possible sequence showing a check, a capture and checkmate](docs/screenshots/v3.1-threats.png)
 
 </details>
 
@@ -84,7 +84,7 @@ There are no accuracy-style totals, phase scores or per-move ratings. The evalua
 
 **Opening recognition and study: learn from a position you actually played.** Expand “Learn this opening” to see the matched name, ECO code and opening moves.
 
-![Opening study: C41 Philidor Defense, moves, plans and learning links](docs/screenshots/v3-opening.png)
+![Opening study: C41 Philidor Defense, moves, plans and learning links](docs/screenshots/v3.1-opening.png)
 
 This example identifies **C41 · Philidor Defense** and explains the idea of supporting e5 with d6 while White challenges the center with d4. Jump back to the opening position on the board, then follow the study link to explore its plans and variations. Opening recognition works offline; external learning resources need an internet connection.
 
@@ -124,7 +124,7 @@ This example identifies **C41 · Philidor Defense** and explains the idea of sup
 
 **Keep a review archive.** Search opponents, filter by color and open every interactive review from one page.
 
-![Review archive](docs/screenshots/library.png)
+![Review archive](docs/screenshots/v3.1-library.png)
 
 </details>
 

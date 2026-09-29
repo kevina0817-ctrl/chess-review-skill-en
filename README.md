@@ -12,6 +12,7 @@ Works with Codex, Claude Code, Kimi and other assistants that support the Agent 
 
 | Version | New feature | What you can do |
 |---|---|---|
+| 3.1.1 | Publisher credit and contact | Every review, archive and common-leaks page has a discreet Mission9 Lab Inc credit and contact email in its header. |
 | 3.1 | Move counts for both sides | See total moves, blunders, mistakes and verified good moves. Accuracy-style totals, phase scores and per-move ratings are removed; the evaluation chart and advantage bar remain. |
 | 3.0 | Both sides and game data | Learn from both sides’ key moves and click the evaluation chart to revisit actual play. |
 | 3.0 | Threat exploration | Replay engine continuations from key positions, with checks, captures and checkmate marked. |
@@ -42,9 +43,11 @@ If the requested game is already reviewed, the assistant returns the existing re
 
 ## Features
 
+Every generated page includes **Mission9 Lab Inc** and a clickable **info@mission9lab.com** in its header. The small credit wraps on narrow screens without covering the board. Pages still work offline; clicking the email link opens a mail client.
+
 See the review at a glance: game data, an interactive board and explanations of key decisions.
 
-![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/v3.1-review-overview.png)
+![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/v3.1.1-review-overview.png)
 
 *Public historical teaching example: the 1858 Opera Game.*
 
@@ -124,7 +127,7 @@ This example identifies **C41 · Philidor Defense** and explains the idea of sup
 
 **Keep a review archive.** Search opponents, filter by color and open every interactive review from one page.
 
-![Review archive](docs/screenshots/v3.1-library.png)
+![Review archive](docs/screenshots/v3.1.1-library.png)
 
 </details>
 
@@ -150,7 +153,7 @@ Find mistakes that repeat across your games and compare what you played with a b
 
 **Find mistakes that keep returning.** Group similar decisions across games and revisit each position. One occurrence is a “New finding”; at least two different games are needed for a repeated pattern.
 
-![Recurring mistakes grouped across games](docs/screenshots/common-leaks-overview.png)
+![Recurring mistakes grouped across games](docs/screenshots/v3.1.1-common-leaks-overview.png)
 
 **Actual vs. suggested, side by side.** Two boards start from the same position. Play, pause and step through each line, with arrows and short captions showing what happened and what could change.
 

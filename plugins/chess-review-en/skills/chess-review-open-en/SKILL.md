@@ -30,6 +30,8 @@ Use the bundled tools to produce validated, standalone HTML and PGN. Stockfish s
 
 ## Quality rules
 
+- Preserve the discreet Mission9 Lab Inc publisher credit and info@mission9lab.com contact link in the header of every generated review, archive and common-leaks page. Keep it in normal flow without covering the board, tracking or external resources.
+
 - A legal recapture may be unsafe: check pins, defenders, checks and king safety.
 - Check mate-in-one first. Confirm claimed checkmate with `board.is_checkmate()`. Escaping check may involve capture or blocking, not only moving the king.
 - Show total moves, blunders, mistakes and verified good moves for each side. Do not calculate or display accuracy-style totals, phase scores or per-move ratings. Count positive actual lessons once per real side and ply, and state that only included examples count. Keep the position chart and advantage bar; never invent missing analysis. A principal variation illustrates a possibility, not forced play; multiple reasonable first moves may be listed in `accepted_moves`.

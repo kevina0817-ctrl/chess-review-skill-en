@@ -234,6 +234,8 @@ See the [3.1 feature and validation notes](docs/3.1-requirements.md). Installati
 
 ## License
 
+**Noncommercial use and attribution:** when sharing this software or modified copies, retain the license and both `Required Notice` lines, including **Chess Review Open by Mission9 Lab** and the copyright holder **Mission Nine Lab Inc.** The standard license’s `Yoyodyne / example.com` text is only a formatting example, unrelated to this project.
+
 This project’s own scripts, templates, documentation and examples use [PolyForm Noncommercial 1.0.0](LICENSE): free to use, modify and share for **noncommercial purposes**, including personal learning, hobbies, teaching and nonprofit use. For commercial use, contact Mission Nine Lab Inc. at [info@mission9lab.com](mailto:info@mission9lab.com) for written permission.
 
 Bundled Stockfish, separately installed python-chess and the chess-piece artwork retain their own third-party licenses. The noncommercial restriction does not apply to those components. See [third-party notices](plugins/chess-review-en/skills/chess-review-open-en/NOTICE.md).

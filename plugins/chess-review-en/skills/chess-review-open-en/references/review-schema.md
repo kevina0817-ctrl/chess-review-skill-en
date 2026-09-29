@@ -2,7 +2,7 @@
 
 Pass a normalized single-game PGN and UTF-8 JSON to the builder. See the example configs for complete field layouts. Rewrite all explanations for each new game.
 
-Required teaching content: `user_color` (`white`/`black`), `intro`, `overview` (paragraph array), `strengths` (array), `training` (objects with `title`, `text`), `ending`, `provenance`, `date_note`, `review_guide`, and `lessons`. Set `archive_date` and a confirmed `timezone`; optional `notes_prompt` and `opening_notes` explain the actual matched opening's center, development and king safety. Do not guess names or hand-write scores.
+Required teaching content: `user_color` (`white`/`black`), `intro`, `overview` (paragraph array), `strengths` (array), `training` (objects with `title`, `text`), `ending`, `provenance`, `date_note`, `review_guide`, and `lessons`. Set `archive_date` and a confirmed `timezone`; optional `notes_prompt` and `opening_notes` explain the actual matched opening's center, development and king safety. Do not guess opening names or invent move counts. Accuracy-style ratings are not displayed.
 
 Each lesson includes `ply`, `tag`, `title`, `summary`, `why`, `fix`, `habit`, `hint`, `actual_plies`, `better`, and optionally `actor`, `positive`, `assert_mate`, `accepted_moves`.
 

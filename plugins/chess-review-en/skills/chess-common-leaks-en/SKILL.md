@@ -27,7 +27,7 @@ Pass `--enable` only with authorization. Use `--disable` when requested, preserv
 
 Follow [the full format and validation workflow](../chess-review-open-en/references/common-leaks.md). Assess every item in `plan.selected`. Reuse stable group IDs for the same mechanism. A repeated leak requires at least two distinct games; a single occurrence is a new finding. Record `none` when no credible issue exists.
 
-Only use the user's own actual moves for leaks or progress. `actor: opponent` moments and hypothetical engine variations are not the user's performance. Higher average scores alone do not establish improvement or a repaired leak.
+Only use the user's own actual moves for leaks or progress. `actor: opponent` moments and hypothetical engine variations are not the user's performance. Fewer mistakes or more good-move examples alone do not establish improvement or a repaired leak; compare actual opportunities.
 
 Show actual and suggested moves from the same starting position with short captions and one practice habit. Common leaks is the default tab; good moves and supported comparisons belong in the separate Progress tab. Preserve counterexamples and sample limitations; one success does not prove a habit is fixed.
 

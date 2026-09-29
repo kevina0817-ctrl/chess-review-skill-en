@@ -32,7 +32,7 @@ Use the bundled tools to produce validated, standalone HTML and PGN. Stockfish s
 
 - A legal recapture may be unsafe: check pins, defenders, checks and king safety.
 - Check mate-in-one first. Confirm claimed checkmate with `board.is_checkmate()`. Escaping check may involve capture or blocking, not only moving the king.
-- Generate scores only through the documented script. They are not Elo, actual winning probability or another platform's game accuracy. Never fill missing data. A principal variation illustrates a possibility, not forced play; multiple reasonable first moves may be listed in `accepted_moves`.
+- Show total moves, blunders, mistakes and verified good moves for each side. Do not calculate or display accuracy-style totals, phase scores or per-move ratings. Count positive actual lessons once per real side and ply, and state that only included examples count. Keep the position chart and advantage bar; never invent missing analysis. A principal variation illustrates a possibility, not forced play; multiple reasonable first moves may be listed in `accepted_moves`.
 - Do not infer resignation, timeout or checkmate from the result alone. Do not invent the player's thoughts. Losses can contain good moves and winning opportunities.
 - Notes stay in the current browser and can be exported; they do not rewrite HTML or sync automatically.
 - Never publish private games, accounts or notes as plugin examples. Use fictional teaching games or clearly sourced public historical games.

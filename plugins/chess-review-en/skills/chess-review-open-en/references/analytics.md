@@ -1,18 +1,17 @@
-# 3.0 analytics, threats and openings
+# 3.1 move counts, evaluations, threats and openings
 
-Run `analyze_game.py` and pass its output as `build_review.py --analysis analysis.json`. The game fingerprint, every UCI move, turn and FEN must match. Scores are normalized to White's perspective. Deeper results supersede screening results. Without an engine, omit analysis and show unavailable data; never invent numbers.
+Run `analyze_game.py` and pass its output as `build_review.py --analysis analysis.json`. The game fingerprint, every UCI move, turn and FEN must match. Position evaluations are normalized to White's perspective. Deeper results supersede screening results. Without an engine, omit analysis and show unavailable data; never invent numbers.
 
 Lessons use `actor: "user"` (default) or `"opponent"`; the builder checks the actual turn. Mark good moves `positive: true`. An engine first choice is not automatically brilliant. Explain the concrete problem it solves, and reserve blunder claims for meaningful loss supported by deeper analysis. Opponent mistakes are opportunities, not evidence of the user's improvement.
 
-## Score definitions
+## Count and chart definitions
 
-- White cp maps to an index `100 / (1 + exp(-0.00368208 * cp))`. This is a visualization, not this player's actual win probability.
-- Let delta be the mover's index loss, floored at zero. Per-move score is `clamp(103.1668 * exp(-0.04354 * delta) - 3.1669, 0, 100)`; no loss scores 100.
-- Overall and phase scores are arithmetic means of each side's moves. The formula references [Lichess's per-move formula](https://lichess.org/page/accuracy), but does not copy its game aggregation. Do not call it platform accuracy or Elo.
-- Delta >= 20 / 10 / 5 is this plugin's blunder / mistake / inaccuracy threshold, not another platform's classification. The mapping saturates in very unequal positions, so high averages can conceal serious mistakes.
-- Average pawn loss includes only pairs with cp before and after. Mate is shown separately as M, never as the artificial ranking extreme. Rules confirm terminal positions; a rules-based draw maps to 50.
-- Endgame heuristic: combined non-pawn material <= 13, or no queens and <= 26 (minor pieces 3, rooks 5, queens 9). Otherwise first 10 moves are opening, then middlegame. Missing phases show no sample.
-- Always show samples, events and positions alongside averages. Search time/depth affect data; do not compare tiny differences under different settings.
+- Do not calculate or display accuracy-style totals, phase scores, per-move ratings or their tooltips. Cards show each side's total moves, blunders, mistakes and verified good moves.
+- Total moves counts actual moves by that side, not full-move numbers. Good moves count distinct `positive: true` actual lessons by real color and `ply`. Only verified included examples count; zero does not mean no good moves were played. An engine first choice alone is not a good-move example.
+- White cp maps to an index `100 / (1 + exp(-0.00368208 * cp))`. This visualizes the position; it is not accuracy or the player's actual winning probability.
+- Let delta be the mover's index loss, floored at zero. Delta >= 20 is a blunder; 10 <= delta < 20 is a mistake; 5 <= delta < 10 is an inaccuracy. Blunders and mistakes do not overlap. These are this tool's thresholds, not another platform's classifications. The mapping saturates in very unequal positions, so counts cannot replace explanations of key moments.
+- Mate is shown separately as M, never as an artificial pawn value. Rules confirm terminal positions; a rules-based draw maps to 50, and checkmate maps to the winner's extreme.
+- Retain exact FENs, depth, principal variations, the game fingerprint and analysis settings. Do not change the moves, teaching variations or per-game note keys.
 
 ## Chart and continuations
 

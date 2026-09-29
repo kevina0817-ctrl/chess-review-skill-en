@@ -21,7 +21,7 @@ Once enabled, pass only newly completed stems to the planner (maximum 5 per batc
 - `assessments`: one per selected stem, `outcome` of `new`, `existing` or `none`, plus an evidence-based `note`. Never invent a leak to fill a quota.
 - `progress`: `kind` (`good_move`, `comparison`, `repeated`), `title`, `skill`, `explanation`, `habit`, `limit`, `current` and, where applicable, `prior`. Each reference includes `stem`, `ply`, `captions`. Current evidence must be a positive user lesson; comparisons require chronological, comparable actual evidence. Repeated successes require multiple real positive records.
 
-Only the user's actual moves qualify as leaks or progress. Opponent lessons and suggested variations cannot count. Retain contrary evidence and limits; one success or a higher reference score does not prove a leak is fixed. Explain improvement only when comparable opportunities support it.
+Only the user's actual moves qualify as leaks or progress. Opponent lessons and suggested variations cannot count. Retain contrary evidence and limits; one success or fewer recorded mistakes does not prove a leak is fixed. Explain improvement only when comparable opportunities support it.
 
 ## Merge and verify
 

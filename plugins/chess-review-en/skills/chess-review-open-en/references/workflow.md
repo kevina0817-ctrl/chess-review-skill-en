@@ -24,7 +24,7 @@ Write `review.json` using [schema](review-schema.md) and evidence, then:
 python "$SKILL_DIR/scripts/build_review.py" work/prepared/normalized.pgn work/review.json --analysis work/analysis.json --out-dir work/site-staging
 ```
 
-Scores, charts, bars and engine continuations come from matching complete analysis. Old files without a game fingerprint must be reanalyzed; never forge the fingerprint. Omit `--analysis` for honest manual-only reviews; missing scores are shown as unavailable. See [analytics](analytics.md).
+Move counts, charts, bars and engine continuations come from matching complete analysis. Old files without a game fingerprint must be reanalyzed; never forge the fingerprint. Omit `--analysis` for honest manual-only reviews; complete counts and the chart are shown as unavailable. See [analytics](analytics.md).
 
 The builder validates branches, color and mate flags and rejects silent HTML overwrites. After checks copy final HTML and PGN into the output folder and run:
 
@@ -48,6 +48,6 @@ node "$SKILL_DIR/scripts/check_library.cjs" chess-reviews/index.html work/librar
 
 Run insights checks for pages with engine analysis. `CHESS_REVIEW_PLAYWRIGHT` may point to an existing package and `CHESS_REVIEW_BROWSER` to a browser executable. Check all lessons, legal practice, replay, downloads, notes isolation, desktop/mobile layout; inspect screenshots for readable pieces and text. Test in an isolated browser profile.
 
-`examples/white.pgn` and `black.pgn` are fictional teaching games with manually written configs; they make no engine claim. `opera.pgn` is the public 1858 Opera Game; analyze it and build with `opera-review.json` for the 3.0 historical demo. Never reuse example conclusions for a new game.
+`examples/white.pgn` and `black.pgn` are fictional teaching games with manually written configs; they make no engine claim. `opera.pgn` is the public 1858 Opera Game; analyze it and build with `opera-review.json` for the 3.1 historical demo. Never reuse example conclusions for a new game.
 
 Default output is local and offline. No automatic commit, push or deployment; source repository URLs are not upload targets. The user must explicitly authorize publishing to their own destination. The companion common-leaks skill is optional: after 10 completed reviews and opt-in, update incrementally. The library preserves its link.

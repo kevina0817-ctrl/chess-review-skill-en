@@ -1,4 +1,4 @@
-# Chess Review Open 3.0 · Interactive Chess Review
+# Chess Review Open 3.1 · Interactive Chess Review
 
 **[Chinese version →](https://github.com/kevina0817-ctrl/chess-review-skill)**
 
@@ -12,7 +12,8 @@ Works with Codex, Claude Code, Kimi and other assistants that support the Agent 
 
 | Version | New feature | What you can do |
 |---|---|---|
-| 3.0 | Both sides and game data | Learn from your own and your opponent’s good moves and mistakes. Explore reference scores, phase breakdowns, a clickable evaluation chart and a position-linked advantage bar. |
+| 3.1 | Move counts for both sides | See total moves, blunders, mistakes and verified good moves. Accuracy-style totals, phase scores and per-move ratings are removed; the evaluation chart and advantage bar remain. |
+| 3.0 | Both sides and game data | Learn from both sides’ key moves and click the evaluation chart to revisit actual play. |
 | 3.0 | Threat exploration | Replay engine continuations from key positions, with checks, captures and checkmate marked. |
 | 3.0 | Opening recognition and study | Identify the opening from actual positions, see its name and ECO code, and follow opening study links. |
 | 2.0 | Automatic Chess.com import | Share your username, then simply ask for your latest game. No copy/paste or password needed. PGN from other platforms still works. |
@@ -43,13 +44,13 @@ If the requested game is already reviewed, the assistant returns the existing re
 
 See the review at a glance: game data, an interactive board and explanations of key decisions.
 
-![Game review overview: scores, evaluation chart, chessboard and key-move explanations](docs/screenshots/review-overview.png)
+![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/review-overview.png)
 
 *Public historical teaching example: the 1858 Opera Game.*
 
 ### 1. Game review
 
-Understand your game, learn from both sides and try better moves yourself. Explore scores, possible threats and opening plans alongside the board.
+Understand your game, learn from both sides and try better moves yourself. Explore move counts, possible threats and opening plans alongside the board.
 
 <details>
 <summary><strong>Explore game review — details and screenshots</strong></summary>
@@ -57,13 +58,15 @@ Understand your game, learn from both sides and try better moves yourself. Explo
 Select a topic below to see how it works.
 
 <details>
-<summary><strong>Both sides, scores and evaluation chart</strong></summary>
+<summary><strong>Both sides, move counts and evaluation chart</strong></summary>
 
 **Learn from both sides, with data linked to the board.** Explore your own and your opponent’s key moves, strengths and mistakes. Click the chart to revisit actual play; the advantage bar follows the current analyzed position.
 
-**Scores with a clear meaning.** See both sides’ move-quality reference scores, your opening/middlegame/endgame breakdown and sample counts. These are not Elo or another platform’s whole-game accuracy. The calculation is explained on the page.
+**See how many moves fall into each category.** Each side has total moves, blunders, mistakes and good-move counts. Blunders and mistakes are separate categories. Good moves count only verified actual moves included in the review; zero means none are included, not that no good moves were played.
 
-![Both sides’ scores, phase breakdown and clickable evaluation chart](docs/screenshots/v3-insights.png)
+There are no accuracy-style totals, phase scores or per-move ratings. The evaluation chart and advantage bar still show position changes for White and Black, not actual winning probability. Expand the on-page explanation for the classification and chart definitions.
+
+![Both sides’ total moves, blunders, mistakes, good moves and clickable evaluation chart](docs/screenshots/v3-insights.png)
 
 </details>
 
@@ -227,7 +230,7 @@ plugins/chess-review-en/
     chess-common-leaks-en/    # Cross-game patterns and incremental updates
 ```
 
-Installation details depend on your assistant. See the [runtime workflow](plugins/chess-review-en/skills/chess-review-open-en/references/workflow.md), [analytics definitions](plugins/chess-review-en/skills/chess-review-open-en/references/analytics.md) and [common-leaks format](plugins/chess-review-en/skills/chess-review-open-en/references/common-leaks.md).
+See the [3.1 feature and validation notes](docs/3.1-requirements.md). Installation details depend on your assistant. See the [runtime workflow](plugins/chess-review-en/skills/chess-review-open-en/references/workflow.md), [analytics definitions](plugins/chess-review-en/skills/chess-review-open-en/references/analytics.md) and [common-leaks format](plugins/chess-review-en/skills/chess-review-open-en/references/common-leaks.md).
 
 ## License
 

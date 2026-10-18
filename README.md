@@ -2,19 +2,6 @@
 
 **[Chinese version →](https://github.com/kevina0817-ctrl/chess-review-skill)**
 
-## What changed in 3.2
-
-The chart identifies which side is yours. Click an event to open its explanation, and use the prominent **Game reviews / Common leaks / Growth** tabs or **Back to home** from any review.
-
-Growth can now summarize **relative strengths, comparable trends and a practice priority**, with actual counts across consecutive games. Opt in to full Chess.com rating history and cached analysis of the latest 60 rated games; pools stay separate and failed updates retain a labeled old snapshot. Single good moves remain in their game reviews. This is not an accuracy score or proof of mastery.
-
-Ask: “Track my Chess.com rating history and quantify my progress across games.” The agent confirms your account and writes a local configuration; no personal account is bundled. First-time common-leaks setup still requires ten completed reviews. [Configuration and method](plugins/chess-review-en/skills/chess-review-open-en/references/capability-history.md) · [Full changes](CHANGELOG.md).
-
-![3.2 growth view — fictional demonstration counts](docs/screenshots/v3.2-growth.png)
-
-*The growth screenshot uses clearly labeled fictional demonstration data, not a real player’s results.*
-
-
 ## Purpose
 
 Give your latest game (PGN) to an AI coding assistant and get an **interactive review you can open in your browser**: see where things went wrong, compare a better move, and try it yourself on the board. English explanations, offline access, no website account required.
@@ -33,6 +20,8 @@ Works with Codex, Claude Code, Kimi and other assistants that support the Agent 
 | 3.0 | Opening recognition and study | Identify the opening from actual positions, see its name and ECO code, and follow opening study links. |
 | 2.0 | Automatic Chess.com import | Share your username, then simply ask for your latest game. No copy/paste or password needed. PGN from other platforms still works. |
 | 2.0 | Common leaks across games | After at least 10 distinct completed reviews, opt into recurring-mistake analysis. New reviews add examples and evidence of progress. |
+
+See [CHANGELOG.md](CHANGELOG.md) for the full release notes.
 
 The plugin contains two skills: **`chess-review-open-en`** for individual games and **`chess-common-leaks-en`** for recurring mistakes and progress.
 
@@ -65,6 +54,8 @@ See the review at a glance: game data, an interactive board and explanations of 
 
 *Public historical teaching example: the 1858 Opera Game.*
 
+Use the **Game reviews / Common leaks / Growth** tabs to switch views, or **Back to home** from any review.
+
 ### 1. Game review
 
 Understand your game, learn from both sides and try better moves yourself. Explore move counts, possible threats and opening plans alongside the board.
@@ -77,7 +68,7 @@ Select a topic below to see how it works.
 <details>
 <summary><strong>Both sides, move counts and evaluation chart</strong></summary>
 
-**Learn from both sides, with data linked to the board.** Explore your own and your opponent’s key moves, strengths and mistakes. Click the chart to revisit actual play; the advantage bar follows the current analyzed position.
+**Learn from both sides, with data linked to the board.** Explore your own and your opponent’s key moves, strengths and mistakes. White/Black labels identify you and your opponent. Click the chart to revisit actual play or an event to open its explanation; the advantage bar follows the current analyzed position.
 
 **See how many moves fall into each category.** Each side has total moves, blunders, mistakes and good-move counts. Blunders and mistakes are separate categories. Good moves count only verified actual moves included in the review; zero means none are included, not that no good moves were played.
 
@@ -179,12 +170,22 @@ Opt in after at least **10 distinct completed interactive reviews**. Downloaded 
 
 ### 3. Growth trends
 
-The Growth tab combines capability summaries with complete rating history. Compare three separate 20-game groups, including wins, draws and losses. Counts show clear errors per 100 comparable moves, mate-in-one conversion and defense, plus the number of games behind each result.
+See relative strengths, changes and a practice priority through consecutive-game statistics and rating history. Growth has its own tab and can be enabled on request.
+
+<details>
+<summary><strong>Explore growth trends — details and screenshots</strong></summary>
+
+**See how your play changes over time.** Sync all available Chess.com rating history and view rapid, blitz and other rating pools separately. Capability analysis compares three separate 20-game groups from the latest 60 rated games, including wins, draws and losses. Counts show clear errors per 100 comparable moves, mate-in-one conversion and defense, plus the number of games behind each result.
+
+Ask: “Track my Chess.com rating history and quantify my progress across games.” The agent uses your confirmed account in a local configuration. Requested reviews refresh the data; failed updates retain a labeled old snapshot. First-time common-leaks setup still requires ten completed reviews. [Configuration and method](plugins/chess-review-en/skills/chess-review-open-en/references/capability-history.md).
 
 Strengths and practice priorities are qualified by sample size; trends do not establish mastery or adjust for opponent difficulty. A good-move collection is not used as the growth dashboard when capability analysis is enabled. Existing evidence and individual lessons remain preserved.
 
 ![Growth summary and rating curve — fictional demonstration data](docs/screenshots/v3.2-growth.png)
 
+*The growth screenshot uses clearly labeled fictional demonstration data, not a real player’s results.*
+
+</details>
 
 ## How does it compare?
 

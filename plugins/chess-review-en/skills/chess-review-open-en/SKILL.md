@@ -3,7 +3,7 @@ name: chess-review-open-en
 description: Fetch completed games for a user-provided Chess.com username, or read PGN text, files and clear screenshots, then create English interactive chess reviews. Handle latest-game requests through analysis and local archiving; incrementally update common leaks when enabled. No fixed account, machine path or publishing service.
 ---
 
-# Interactive chess review
+# Interactive chess review 3.2
 
 Use the bundled tools to produce validated, standalone HTML and PGN. Stockfish supplies evidence; the agent chooses teaching moments, writes explanations and verifies the result. The finished page does not run a live engine.
 
@@ -42,3 +42,12 @@ Use the bundled tools to produce validated, standalone HTML and PGN. Stockfish s
 ## Shared resources
 
 Both skills share this skill's scripts, templates and engine. `fetch_chesscom.py` imports games; `plan_common_leaks.py` records opt-in and plans bounded batches; `build_leaks.py`, `check_leaks.cjs` and `assets/leaks-template.html` validate and update animated comparisons and progress. These tools do not schedule background work.
+
+## Navigation and growth in 3.2
+
+- Label the evaluation chart White/Black with “me/opponent”, derived from each PGN. Event chips open the matching key lesson and its actual move; chart points still open replay. Do not create chips without an authored lesson.
+- Keep the shared Games / Common leaks / Growth navigation and Back to home links. Embedded Home returns to the same portable index without resetting the selected board or changing note keys. Preserve old files, fragment links, offline use and mobile layout.
+- When the user requests rating history, follow [rating history](references/rating-history.md). When they request quantified strengths or progression, follow [capability trends](references/capability-history.md). Store confirmed account and cache settings only in the user’s local output folder. These features are opt-in, not implied by a one-game review.
+- Once configured, run `build_leaks.py` on every requested review update, even if no new leak example is added. It sequentially refreshes complete public history and reuses analysis caches. No background scheduler. `--skip-rating-sync` is only for offline rebuilding/testing.
+- Capability-enabled Growth replaces the old good-move list with strengths, comparable groups and a practice priority. Retain legacy data and good moves in individual reviews. Include wins, draws and losses; show denominators, opportunity counts and sample limitations. A single good move or rating rise is not proof of sustained improvement. Never restore an accuracy-style aggregate score.
+- Review batches follow the requested date, opponents and result filters. Deduplicate by game ID and player/move signature, report the selected scope, then analyze each game. Do not silently select only the latest game when several were requested.

@@ -1,4 +1,4 @@
 interface:
-  display_name: "Common Leaks"
+  display_name: "Chess Common Leaks 3.2"
   short_description: "Find recurring mistakes and track evidence-based progress."
   default_prompt: "Use $chess-common-leaks-en to analyze my completed game reviews."

@@ -1,5 +1,9 @@
 # Common-leaks format and validation
 
+## Current presentation in 3.2
+
+When capability tracking is enabled, lead Growth with the consecutive samples in [capability trends](capability-history.md), followed by [rating history](rating-history.md). The legacy `progress` format below preserves existing examples; it does not require appending a good-move list for each game or displaying it as progression. Keep good moves in individual lessons. Archives without tracking may retain their legacy examples, but these are not quantitative progress.
+
 Use one stable `common-leaks.html`, with embedded `visual-data` as its canonical archive. Default to Common leaks; Progress is a separate tab. Preserve keyboard controls, deep links and existing notes.
 
 ## First-run gate and batches

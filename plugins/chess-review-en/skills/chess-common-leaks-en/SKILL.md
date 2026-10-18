@@ -43,3 +43,7 @@ python "$REVIEW_SKILL_DIR/scripts/build_leaks.py" chess-reviews --merge work/lea
 ```
 
 Deduplicate by stable game ID and teaching position, preserve existing cases and notes, and record games checked even when no new leak appears. Deliver a brief change summary and animated page, not another long text report. This is on-request agent work, not account polling or a cloud service. Default to local files; publish only on explicit user authorization to their own target.
+
+## Quantified growth (opt-in)
+
+When the user asks for strengths and progression, follow [capability trends](../chess-review-open-en/references/capability-history.md) and [rating history](../chess-review-open-en/references/rating-history.md). Once enabled, rebuild on every review, including updates with no new leak. Growth shows comparable statistics before the complete rating history; remove the legacy example list from the visible page but retain its data and individual lessons. Preserve Games / Common leaks / Growth navigation. The existing ten-reviewed-game first-use gate for common leaks remains unchanged.

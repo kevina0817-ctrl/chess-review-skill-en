@@ -1,6 +1,19 @@
-# Chess Review Open 3.1 · Interactive Chess Review
+# Chess Review Open 3.2 · Interactive Chess Review
 
 **[Chinese version →](https://github.com/kevina0817-ctrl/chess-review-skill)**
+
+## What changed in 3.2
+
+The chart identifies which side is yours. Click an event to open its explanation, and use the prominent **Game reviews / Common leaks / Growth** tabs or **Back to home** from any review.
+
+Growth can now summarize **relative strengths, comparable trends and a practice priority**, with actual counts across consecutive games. Opt in to full Chess.com rating history and cached analysis of the latest 60 rated games; pools stay separate and failed updates retain a labeled old snapshot. Single good moves remain in their game reviews. This is not an accuracy score or proof of mastery.
+
+Ask: “Track my Chess.com rating history and quantify my progress across games.” The agent confirms your account and writes a local configuration; no personal account is bundled. First-time common-leaks setup still requires ten completed reviews. [Configuration and method](plugins/chess-review-en/skills/chess-review-open-en/references/capability-history.md) · [Full changes](CHANGELOG.md).
+
+![3.2 growth view — fictional demonstration counts](docs/screenshots/v3.2-growth.png)
+
+*The growth screenshot uses clearly labeled fictional demonstration data, not a real player’s results.*
+
 
 ## Purpose
 
@@ -12,6 +25,7 @@ Works with Codex, Claude Code, Kimi and other assistants that support the Agent 
 
 | Version | New feature | What you can do |
 |---|---|---|
+| 3.2 | Navigation and measurable growth | Rating history, consecutive-game skill trends, side labels and direct lesson links. |
 | 3.1.1 | Publisher credit and contact | Every review, archive and common-leaks page has a discreet Mission9 Lab Inc credit and contact email in its header. |
 | 3.1 | Move counts for both sides | See total moves, blunders, mistakes and verified good moves. Accuracy-style totals, phase scores and per-move ratings are removed; the evaluation chart and advantage bar remain. |
 | 3.0 | Both sides and game data | Learn from both sides’ key moves and click the evaluation chart to revisit actual play. |
@@ -47,7 +61,7 @@ Every generated page includes **Mission9 Lab Inc** and a clickable **info@missio
 
 See the review at a glance: game data, an interactive board and explanations of key decisions.
 
-![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/v3.1.1-review-overview.png)
+![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/v3.2-review-overview.png)
 
 *Public historical teaching example: the 1858 Opera Game.*
 
@@ -69,7 +83,7 @@ Select a topic below to see how it works.
 
 There are no accuracy-style totals, phase scores or per-move ratings. The evaluation chart and advantage bar still show position changes for White and Black, not actual winning probability. Expand the on-page explanation for the classification and chart definitions.
 
-![Both sides’ total moves, blunders, mistakes, good moves and clickable evaluation chart](docs/screenshots/v3.1-insights.png)
+![Both sides’ total moves, blunders, mistakes, good moves and clickable evaluation chart](docs/screenshots/v3.2-insights.png)
 
 </details>
 
@@ -78,7 +92,7 @@ There are no accuracy-style totals, phase scores or per-move ratings. The evalua
 
 **See the next few moves.** Replay a possible sequence suggested by Stockfish, the chess analysis engine, to spot checks, captures and mating ideas for either side. This helps you understand a threat and look for a response. It is an example of what could happen, not a prediction of what your opponent must play; it stays separate from the actual game.
 
-![A possible sequence showing a check, a capture and checkmate](docs/screenshots/v3.1-threats.png)
+![A possible sequence showing a check, a capture and checkmate](docs/screenshots/v3.2-threats.png)
 
 </details>
 
@@ -87,7 +101,7 @@ There are no accuracy-style totals, phase scores or per-move ratings. The evalua
 
 **Opening recognition and study: learn from a position you actually played.** Expand “Learn this opening” to see the matched name, ECO code and opening moves.
 
-![Opening study: C41 Philidor Defense, moves, plans and learning links](docs/screenshots/v3.1-opening.png)
+![Opening study: C41 Philidor Defense, moves, plans and learning links](docs/screenshots/v3.2-opening.png)
 
 This example identifies **C41 · Philidor Defense** and explains the idea of supporting e5 with d6 while White challenges the center with d4. Jump back to the opening position on the board, then follow the study link to explore its plans and variations. Opening recognition works offline; external learning resources need an internet connection.
 
@@ -127,7 +141,7 @@ This example identifies **C41 · Philidor Defense** and explains the idea of sup
 
 **Keep a review archive.** Search opponents, filter by color and open every interactive review from one page.
 
-![Review archive](docs/screenshots/v3.1.1-library.png)
+![Review archive](docs/screenshots/v3.2-library.png)
 
 </details>
 
@@ -153,7 +167,7 @@ Find mistakes that repeat across your games and compare what you played with a b
 
 **Find mistakes that keep returning.** Group similar decisions across games and revisit each position. One occurrence is a “New finding”; at least two different games are needed for a repeated pattern.
 
-![Recurring mistakes grouped across games](docs/screenshots/v3.1.1-common-leaks-overview.png)
+![Recurring mistakes grouped across games](docs/screenshots/v3.2-common-leaks-overview.png)
 
 **Actual vs. suggested, side by side.** Two boards start from the same position. Play, pause and step through each line, with arrows and short captions showing what happened and what could change.
 
@@ -163,20 +177,14 @@ Opt in after at least **10 distinct completed interactive reviews**. Downloaded 
 
 </details>
 
-### 3. Progress analysis
+### 3. Growth trends
 
-See what you are doing better through real good moves and earlier/later comparisons. Progress has its own tab, so improvements stay visible alongside the habits you are still working on.
+The Growth tab combines capability summaries with complete rating history. Compare three separate 20-game groups, including wins, draws and losses. Counts show clear errors per 100 comparable moves, mate-in-one conversion and defense, plus the number of games behind each result.
 
-<details>
-<summary><strong>Explore progress — details and screenshots</strong></summary>
+Strengths and practice priorities are qualified by sample size; trends do not establish mastery or adjust for opponent difficulty. A good-move collection is not used as the growth dashboard when capability analysis is enabled. Existing evidence and individual lessons remain preserved.
 
-**See what you are doing better.** A separate Progress tab records real good moves and, when comparable evidence exists, earlier/later examples. One success does not mean a recurring mistake is permanently fixed.
+![Growth summary and rating curve — fictional demonstration data](docs/screenshots/v3.2-growth.png)
 
-![Earlier and later decisions in the Progress tab](docs/screenshots/common-leaks-progress.png)
-
-*Common-leaks and progress screenshots use fictional teaching games. Your archive uses your own verified games.*
-
-</details>
 
 ## How does it compare?
 
@@ -196,7 +204,7 @@ Chess platforms also offer explanations and exercises, such as [Chess.com Game R
 | What could I play next time? | A suggested line from the same position, plus hands-on practice. |
 | Which opening did I play? | Its name, matched position, a plan for this game and study links. |
 | Which mistakes keep returning? | Related examples from different games, replayed together. |
-| Am I improving? | Actual good moves and evidence-based comparisons. |
+| Am I improving? | Comparable capability counts and a separate rating history, with sample limits. |
 
 ## How it works
 

@@ -1,15 +1,15 @@
 {
   "name": "chess-review-en",
-  "version": "3.1.1",
-  "description": "Automatic Chess.com import, interactive game reviews, move counts, threats, opening study, common leaks and progress.",
+  "version": "3.2.0",
+  "description": "Interactive reviews with clear player identity, lesson links, shared navigation and optional rating and capability trends.",
   "author": {
     "name": "Mission Nine Lab Inc."
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Chess Review Open 3.1 · English",
-    "shortDescription": "Learn from both sides, recurring mistakes and real progress.",
-    "longDescription": "Review by Chess.com username or PGN. Learn from both sides with move counts, an evaluation chart and bar, engine continuations and opening links. After 10 completed reviews, opt into incremental common-leaks and progress analysis. Outputs local HTML by default.",
+    "displayName": "Chess Review 3.2 · English",
+    "shortDescription": "Interactive reviews with clear player identity, lesson links, shared navigation and optional rating and capability trends.",
+    "longDescription": "Fetch completed Chess.com games or import PGN, then create local offline reviews with lessons, replay and notes. Navigate between Games, Common leaks and Growth. Opt in to complete rating history and comparable 20-game capability groups; no accuracy score or background monitoring.",
     "developerName": "Mission Nine Lab Inc.",
     "category": "Productivity",
     "capabilities": [

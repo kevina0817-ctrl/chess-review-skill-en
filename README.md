@@ -46,8 +46,6 @@ If the requested game is already reviewed, the assistant returns the existing re
 
 ## Features
 
-Every generated page includes **Mission9 Lab Inc** and a clickable **info@mission9lab.com** in its header. The small credit wraps on narrow screens without covering the board. Pages still work offline; clicking the email link opens a mail client.
-
 See the review at a glance: game data, an interactive board and explanations of key decisions.
 
 ![Game review overview: move counts, evaluation chart, chessboard and key-move explanations](docs/screenshots/v3.2-review-overview.png)

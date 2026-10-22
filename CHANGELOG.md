@@ -9,7 +9,3 @@
 - Added cached capability analysis of up to 60 rated standard games in one pool, including wins, draws and losses. Compare separate 20-game groups using error frequency and exact mate-in-one opportunities/defenses, with denominators and game counts.
 - Capability-enabled Growth summarizes relative strengths, observed changes and the next practice priority. The old good-move list is removed from view; its data, individual lessons and note keys remain.
 - Updated English/Chinese instructions, examples, screenshots, browser checks and release packages. No accuracy score, automatic upload or background monitor; licenses are unchanged.
-
-## 3.1.1
-
-Added discreet Mission9 Lab Inc credits and the contact email to generated pages. Earlier release history remains in the README and Git tags.

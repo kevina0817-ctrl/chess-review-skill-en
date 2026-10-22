@@ -13,7 +13,6 @@ Works with Codex, Claude Code, Kimi and other assistants that support the Agent 
 | Version | New feature | What you can do |
 |---|---|---|
 | 3.2 | Navigation and measurable growth | Rating history, consecutive-game skill trends, side labels and direct lesson links. |
-| 3.1.1 | Publisher credit and contact | Every review, archive and common-leaks page has a discreet Mission9 Lab Inc credit and contact email in its header. |
 | 3.1 | Move counts for both sides | See total moves, blunders, mistakes and verified good moves. Accuracy-style totals, phase scores and per-move ratings are removed; the evaluation chart and advantage bar remain. |
 | 3.0 | Both sides and game data | Learn from both sides’ key moves and click the evaluation chart to revisit actual play. |
 | 3.0 | Threat exploration | Replay engine continuations from key positions, with checks, captures and checkmate marked. |
